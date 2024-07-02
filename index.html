@@ -9,138 +9,109 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <header class="bg-dark text-white py-3">
-        <div class="container">
-            <h1 class="text-center">Portfólio de Erik Ingleson Amaral Arruda</h1>
-            <nav class="navbar navbar-expand-lg navbar-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Portfólio de Erik Ingleson Amaral Arruda</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Mim</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
                         <li class="nav-item"><a class="nav-link" href="#certificacoes">Certificações</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                     </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
     
-    <main class="container mt-5">
-        <section id="sobre" class="mb-5">
-            <h2>Sobre Mim</h2>
-            <p>Sou um desenvolvedor com formação em Análise e Desenvolvimento de Sistemas e experiência em diversas linguagens de programação e tecnologias. Tenho uma paixão por desenvolver soluções eficientes e inovadoras, com foco em back-end utilizando Python e Django.</p>
-            <p><a href="Erik_Ingleson_CV.pdf" target="_blank" class="btn btn-primary">Baixar Currículo</a></p>
+    <main>
+        <section id="sobre" class="py-5">
+            <div class="container">
+                <h2 class="mb-4">Sobre Mim</h2>
+                <p class="lead">Sou um desenvolvedor com formação em Análise e Desenvolvimento de Sistemas e experiência em diversas linguagens de programação e tecnologias. Tenho uma paixão por desenvolver soluções eficientes e inovadoras, com foco em back-end utilizando Python e Django.</p>
+            </div>
         </section>
         
-        <section id="projetos" class="mb-5">
-            <h2>Projetos</h2>
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Webcrawler Automatizado</h5>
-                            <p class="card-text"><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript, Python, Django, PostgreSQL</p>
-                            <p class="card-text"><strong>Descrição:</strong> Este projeto consiste em um webcrawler automatizado capaz de extrair dados de websites específicos e armazená-los em um banco de dados PostgreSQL.</p>
-                            <a href="https://github.com/Ingleson10/Crawler-Django" target="_blank" class="btn btn-primary">Ver no GitHub</a>
+        <section id="projetos" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="mb-4">Projetos</h2>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body">
+                                <h3 class="card-title">Webcrawler Automatizado</h3>
+                                <p class="card-text"><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript, Python, Django, PostgreSQL</p>
+                                <p class="card-text">Este projeto consiste em um webcrawler automatizado capaz de extrair dados de websites específicos e armazená-los em um banco de dados PostgreSQL.</p>
+                                <a href="https://github.com/Ingleson10/Crawler-Django" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body">
+                                <h3 class="card-title">NFT-Territory</h3>
+                                <p class="card-text"><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript, EJS, Sequelize, React</p>
+                                <p class="card-text">Plataforma para listagem e gerenciamento de NFTs (Tokens Não Fungíveis). Inclui funcionalidades para criação, listagem e negociação de NFTs.</p>
+                                <a href="https://github.com/Ingleson10/NFTerritory-PI" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body">
+                                <h3 class="card-title">DSMeta</h3>
+                                <p class="card-text"><strong>Tecnologias Utilizadas:</strong> Java, Spring Boot, React, H2 SQL</p>
+                                <p class="card-text">Aplicação de monitoramento de vendas com funcionalidades de cadastro, consulta e análise de dados de vendas.</p>
+                                <a href="https://github.com/Ingleson10/DSmeta" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">NFT-Territory</h5>
-                            <p class="card-text"><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript, EJS, Sequelize, React</p>
-                            <p class="card-text"><strong>Descrição:</strong> Plataforma para listagem e gerenciamento de NFTs. O projeto inclui funcionalidades para criação, listagem e negociação de NFTs.</p>
-                            <a href="https://github.com/Ingleson10/NFTerritory-PI" target="_blank" class="btn btn-primary">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">DSMeta</h5>
-                            <p class="card-text"><strong>Tecnologias Utilizadas:</strong> Java, Spring Boot, React, H2 SQL</p>
-                            <p class="card-text"><strong>Descrição:</strong> Aplicação de monitoramento de vendas com funcionalidades de cadastro, consulta e análise de dados de vendas.</p>
-                            <a href="https://github.com/Ingleson10/DSmeta" target="_blank" class="btn btn-primary">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         
-        <section id="habilidades" class="mb-5">
-            <h2>Habilidades Técnicas</h2>
-            <ul class="list-group">
-                <li class="list-group-item">Desenvolvimento em Python e Django</li>
-                <li class="list-group-item">Integração de APIs RESTful</li>
-                <li class="list-group-item">Automação de Processos com Python</li>
-                <li class="list-group-item">Banco de Dados: PostgreSQL, SQLite</li>
-                <li class="list-group-item">Frontend: HTML, CSS, JavaScript, React</li>
-                <li class="list-group-item">Versionamento de Código com Git</li>
-                <li class="list-group-item">Metodologias Ágeis: Scrum</li>
-                <li class="list-group-item">Testes Unitários e Funcionais</li>
-                <li class="list-group-item">Gerenciamento de Projetos</li>
-                <li class="list-group-item">Integração de Sistemas</li>
-                <li class="list-group-item">Configuração e Monitoramento de Servidores</li>
-            </ul>
-        </section>
-        
-        <section id="certificacoes" class="mb-5">
-            <h2>Certificações e Cursos</h2>
-            <ul class="list-group">
-                <li class="list-group-item">Certificação Python for Everybody (Coursera)</li>
-                <li class="list-group-item">Curso Django for Web Development (Udemy)</li>
-                <li class="list-group-item">Certificação Scrum Master (Scrum.org)</li>
-                <li class="list-group-item">Curso PostgreSQL for Developers (edX)</li>
-                <li class="list-group-item">Curso Avançado em Angular (Udemy)</li>
-                <li class="list-group-item">Certificação Java (Oracle)</li>
-            </ul>
-        </section>
-        
-        <section id="depoimentos" class="mb-5">
-            <h2>Depoimentos</h2>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <blockquote class="blockquote">
-                        <p class="mb-0">"Erik é um desenvolvedor extremamente talentoso e dedicado. Seu conhecimento em Python e Django é excepcional."</p>
-                        <footer class="blockquote-footer">João Silva</footer>
-                    </blockquote>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <blockquote class="blockquote">
-                        <p class="mb-0">"Trabalhar com Erik foi uma experiência incrível. Ele sempre entregou soluções inovadoras e eficientes."</p>
-                        <footer class="blockquote-footer">Maria Fernandes</footer>
-                    </blockquote>
-                </div>
+        <section id="habilidades" class="py-5">
+            <div class="container">
+                <h2 class="mb-4">Habilidades Técnicas</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Desenvolvimento em Python e Django</li>
+                    <li class="list-group-item">Integração de APIs RESTful</li>
+                    <li class="list-group-item">Automação de Processos com Python</li>
+                    <li class="list-group-item">Banco de Dados: PostgreSQL, SQLite</li>
+                    <li class="list-group-item">Frontend: HTML, CSS, JavaScript, React</li>
+                    <li class="list-group-item">Versionamento de Código com Git</li>
+                    <li class="list-group-item">Metodologias Ágeis: Scrum</li>
+                    <li class="list-group-item">Testes Unitários e Funcionais</li>
+                </ul>
             </div>
         </section>
         
-        <section id="blog" class="mb-5">
-            <h2>Blog</h2>
-            <div class="list-group">
-                <a href="blog/post1.html" class="list-group-item list-group-item-action">
-                    <h5 class="mb-1">Melhores Práticas de Desenvolvimento com Django</h5>
-                    <p class="mb-1">23 de Junho de 2024 - Explore as melhores práticas para desenvolver aplicações web robustas utilizando Django.</p>
-                </a>
-                <a href="blog/post2.html" class="list-group-item list-group-item-action">
-                    <h5 class="mb-1">Como Implementar Webcrawlers Eficientes</h5>
-                    <p class="mb-1">15 de Maio de 2024 - Uma visão detalhada sobre a implementação de webcrawlers eficientes para extração de dados.</p>
-                </a>
+        <section id="certificacoes" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="mb-4">Certificações e Cursos</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Certificação Python for Everybody (Coursera)</li>
+                    <li class="list-group-item">Curso Django for Web Development (Udemy)</li>
+                    <li class="list-group-item">Certificação Scrum Master (Scrum.org)</li>
+                    <li class="list-group-item">Curso PostgreSQL for Developers (edX)</li>
+                </ul>
             </div>
         </section>
         
-        <section id="contato" class="mb-5">
-            <h2>Contato</h2>
-            <p>Email: <a href="mailto:erik.ingleson10.ei@gmail.com" class="btn btn-outline-primary">erik.ingleson10.ei@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/erik-ingleson" target="_blank" class="btn btn-outline-primary">linkedin.com/in/erik-ingleson</a></p>
+        <section id="contato" class="py-5">
+            <div class="container">
+                <h2 class="mb-4">Contato</h2>
+                <p>Email: <a href="mailto:erik.ingleson10.ei@gmail.com">erik.ingleson10.ei@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/erik-ingleson-amaral-arruda-b730ba157" target="_blank">LinkedIn</a></p>
+                <p>GitHub: <a href="https://github.com/Ingleson10" target="_blank">GitHub</a></p>
+                <p>Workana: <a href="https://www.workana.com/freelancer/33be0a3664e2c844098239ff470fcbfd" target="_blank">Seu Perfil Workana</a></p>
+                <p>Portfólio: <a href="https://ingleson10.github.io/Portifolio.io/" target="_blank">Meu Portfólio</a></p>
+            </div>
         </section>
     </main>
     
@@ -151,7 +122,7 @@
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts.js"></script>
 </body>

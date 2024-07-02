@@ -1,21 +1,27 @@
+/* Custom CSS styles */
+
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h2 {
-    border-bottom: 2px solid #444;
-    padding-bottom: 0.5rem;
-    color: #444;
+header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-section {
-    margin-bottom: 2rem;
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #343a40;
 }
 
 .card {
-    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #dee2e6;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
@@ -23,31 +29,14 @@ section {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.list-group-item {
-    background: #ffffff;
-    border: 1px solid #dee2e6;
-    margin-bottom: 0.5rem;
-    transition: background-color 0.3s;
+.card-title {
+    color: #343a40;
 }
 
-.list-group-item:hover {
-    background-color: #f1f1f1;
-}
-
-blockquote {
-    background: #f9f9f9;
-    border-left: 5px solid #444;
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-blockquote p {
-    margin: 0;
-    font-style: italic;
-}
-
-blockquote-footer {
-    color: #6c757d;
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
